@@ -1,6 +1,12 @@
 import React from "react";
 import "./Hero.css";
 function Hero() {
+  function scrollToMenu() {
+    window.scrollTo({ top: 800, behavior: "smooth" });
+  }
+  function scrollToContact() {
+    window.scrollTo({ top: 1600, behavior: "smooth" });
+  }
   return (
     <div className="hero-container">
       <div className="pop-up">
@@ -9,10 +15,16 @@ function Hero() {
 
         <div className="buttons">
           <div className="top-btns">
-            <button className="top">OUR MENU</button>
-            <button className="top">ORDER ONLINE</button>
+            <button className="top" onClick={scrollToMenu}>
+              OUR MENU
+            </button>
+            <a href="https://www.ubereats.com/" target="_blank">
+              <button className="top">ORDER ONLINE</button>
+            </a>
           </div>
-          <button className="bottom">WE ARE HIRING</button>
+          <button className="bottom" onClick={scrollToContact}>
+            WE ARE HIRING
+          </button>
         </div>
       </div>
     </div>

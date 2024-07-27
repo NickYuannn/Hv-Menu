@@ -1,0 +1,82 @@
+.menu-container {
+  background-color: #1a1814;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menu-container h1 {
+  color: white;
+  font-size: 5rem;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.appetizer {
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 10px 30px 10px 30px;
+}
+
+.menu-container img {
+  border-radius: 100px;
+  width: 100px;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.menu-container p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.food-name,
+.addons {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.food-ingredients {
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.goi-con {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.a1,
+.addons,
+.a8,
+.a7 {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 600px 100px;
+}
+
+.price {
+  color: #ed3c23;
+}
+
+.nem-cua {
+  display: flex;
+  flex-direction: row;
+}
+
+.nem-ran {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}

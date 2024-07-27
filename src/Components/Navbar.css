@@ -14,6 +14,12 @@
 
   position: fixed;
   z-index: 100;
+  transition: 0.4s all ease;
+}
+
+.navbar-container.active {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .navbar-container > h1 {

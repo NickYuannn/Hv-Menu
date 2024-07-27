@@ -1,13 +1,16 @@
 import React from "react";
 import "./Home.css";
 import Hero from "../Components/Hero";
-import MenuSection from "../Components/MenuSection";
+import Menu from "../Components/Menu";
+import Contact from "../Components/Contact";
 
 function Home() {
+  
   return (
     <>
       <Hero />
-      <MenuSection />
+      <Menu />
+      <Contact />
     </>
   );
 }
