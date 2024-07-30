@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar({ homeRef, menuRef, contactRef }) {
   const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
@@ -19,20 +19,14 @@ function Navbar() {
     };
   }, []);
 
-  function scrollToHome() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-  function scrollToMenu() {
-    window.scrollTo({ top: 800, behavior: "smooth" });
-  }
-  function scrollToContact() {
-    window.scrollTo({ top: 1600, behavior: "smooth" });
+  function scrollIntoView(ref) {
+    ref.current.scrollIntoView({ behavior: "smooth" });
   }
   return (
     <nav className={sticky ? "navbar-container active" : "navbar-container"}>
-      <h1 onClick={scrollToHome}>Home</h1>
-      <h1 onClick={scrollToMenu}>Menu</h1>
-      <h1 onClick={scrollToContact}>Contact</h1>
+      <h1 onClick={() => scrollIntoView(homeRef)}>Home</h1>
+      <h1 onClick={() => scrollIntoView(menuRef)}>Menu</h1>
+      <h1 onClick={() => scrollIntoView(contactRef)}>Contact</h1>
     </nav>
   );
 }

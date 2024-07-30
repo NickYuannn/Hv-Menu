@@ -18,7 +18,7 @@ function Hero() {
             <button className="top" onClick={scrollToMenu}>
               OUR MENU
             </button>
-            <a href="https://www.ubereats.com/" target="_blank">
+            <a href="https://www.ubereats.com/" targetcd="_blank">
               <button className="top">ORDER ONLINE</button>
             </a>
           </div>

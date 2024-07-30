@@ -1,5 +1,5 @@
 .hero-container {
-  background-image: url("/public/food.jpg");
+  background-image: url("/food.jpg");
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   height: 100vh;
@@ -14,7 +14,7 @@
   padding-top: 400px;
 }
 
-.hero-container  h1 {
+.hero-container h1 {
   font-size: 50px;
   font-weight: 700;
   color: white;
