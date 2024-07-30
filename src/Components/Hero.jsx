@@ -5,7 +5,10 @@ function Hero() {
     window.scrollTo({ top: 800, behavior: "smooth" });
   }
   function scrollToContact() {
-    window.scrollTo({ top: 1600, behavior: "smooth" });
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
   }
   return (
     <div className="hero-container">
@@ -18,7 +21,7 @@ function Hero() {
             <button className="top" onClick={scrollToMenu}>
               OUR MENU
             </button>
-            <a href="https://www.ubereats.com/" targetcd="_blank">
+            <a href="https://www.ubereats.com/" target="_blank">
               <button className="top">ORDER ONLINE</button>
             </a>
           </div>

@@ -12,7 +12,6 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
         <Routes>
           <Route path="/" exact Component={Home} />
         </Routes>
